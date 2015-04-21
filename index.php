@@ -27,8 +27,8 @@
 						<div class="col-lg-4">
 							<div class="form-group">
 								<!-- https://www.filepicker.com/documentation/file_ingestion/widgets/pick -->
-								<label class="sr-only">Upload logo</label>
-								<input type="filepicker" data-fp-button-class="btn btn-default btn-block btn-fp" name="logo" data-fp-button-text="+ Logo" data-fp-extensions=".png,.jpg,.jpeg,.gif">
+								<label class="sr-only">Add logo</label>
+								<input type="filepicker" data-fp-button-class="btn btn-default btn-block btn-fp" name="logo" data-fp-button-text="Add Logo" data-fp-extensions=".png,.jpg,.jpeg,.gif">
 							</div>
 						</div>
 					</div>
@@ -100,14 +100,14 @@
 					<div id="contract">
 						<img class="logo hide" src="http://placehold.it/260x180" alt="">
 
-						<p>Between us <span class="item name">[company name]</span> and you <span class="item customername">[customer name]</span></p>
+						<p>Between us <span class="item name">company name</span> and you <span class="item customername">customer name</span></p>
 
 						<h2>Summary:</h2>
 
 						<div class="summary">
 							<p>We’ll always do our best to fulfil your needs and meet your expectations, but it’s important to have things written down so that we both know what’s what, who should do what and when, and what will happen if something goes wrong. In this contract you won’t find any complicated legal terms or long passages of unreadable text. We’ve no desire to trick you into signing something that you might later regret. What we do want is what’s best for both parties, now and in the future.</p>
 							<p>So in short;</p>
-							<p>You (<span class="item customername">[customer name]</span>), located at <span class="item customeraddress">[customer address]</span> are hiring us (<span class="item name">[company name]</span>) located at <span class="item address">[company address]</span> to <span class="item task">[design and develop a web site]</span> for the estimated total price of <span class="item total">[total]</span> as outlined in our previous correspondence. Of course it’s a little more complicated, but we’ll get to that.</p>
+							<p>You (<span class="item customername">customer name</span>), located at <span class="item customeraddress">customer address</span> are hiring us (<span class="item name">company name</span>) located at <span class="item address">company address</span> to <span class="item task">design and develop a web site</span> for the estimated total price of <span class="item total">total</span> as outlined in our previous correspondence. Of course it’s a little more complicated, but we’ll get to that.</p>
 						</div>
 
 						<div class="agree">
@@ -173,22 +173,22 @@
 							<h3>Payments</h3>
 
 							<p>We’re sure you understand how important it is as a small business that you pay the invoices that we send you promptly. As we’re also sure you’ll want to stay friends, you agree to stick tight to the following payment schedule.</p>
-							<p><span class="item payment">[Payment schedule]</span></p>
+							<p><span class="item payment">Payment schedule</span></p>
 
 							<h3>But where’s all the horrible small print?</h3>
 
 							<p>Just like a parking ticket, you can’t transfer this contract to anyone else without our permission. This contract stays in place and need not be renewed. If for some reason one part of this contract becomes invalid or unenforceable, the remaining parts of it remain in place.</p>
-							<p>Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of <span class="item court">[English and Welsh]</span> courts.</p>
+							<p>Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of <span class="item court">English and Welsh</span> courts.</p>
 							<p>Oh and don’t forget those men with big dogs.</p>
 
 							<h3>The dotted line</h3>
 							<table id="signatures" class="table table-bordered">
 								<tr>
-									<td>Signed by and on behalf of <span class="item name">[company name]</span><br><br><br></td>
-									<td>Signed by and on behalf of <span class="item customername">[customer name]</span><br><br><br></td>
+									<td>Signed by and on behalf of <span class="item name">company name</span><br><br><br></td>
+									<td>Signed by and on behalf of <span class="item customername">customer name</span><br><br><br></td>
 								</tr>
 							</table>
-							<p>Date: <span class="item date">[date]</span></p>
+							<p>Date: <span class="item date">date</span></p>
 							<p>Everyone should sign above and keep a copy for their records.</p>
 						</div>
 					</div><!-- /#contract -->
