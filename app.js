@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
 
 	form.on('submit', function () {
 		// Copy the required stuff (style and encoding)
-		$('.nopdf').siblings().prependTo('#contract');
+		$('.nopdf').siblings().clone().addClass('temporary').prependTo('#contract');
 
 		// Get the outerHTML
 		var html = contract.prop('outerHTML');
@@ -14,7 +14,17 @@ jQuery(document).ready(function ($) {
 		$('#input-html').val(html);
 
 		// Update the UI
-		form.find('[type="submit"]').text('Processing...');
+		form.find('[type="submit"]').text('Processing...').prop('disabled', true);
+
+		// Remove the files we appended
+		setTimeout(function () {
+			contract.find('.temporary').remove();
+		}, 300);
+
+		// Restore the default state of the submit button
+		setTimeout(function () {
+			form.find('[type="submit"]').html('Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>').prop('disabled', false);
+		}, 3000);
 	});
 
 	/*
