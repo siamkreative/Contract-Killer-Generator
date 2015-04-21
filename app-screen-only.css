@@ -170,6 +170,17 @@ body {
 	bottom: 30px;
 	right: 30px;
 }
+.sidebar-about a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.sidebar-about hr {
+	border-top: 5px solid #444;
+}
+.sidebar-about .glyphicon-heart {
+	color: #c0392b;
+}
 #contract .item {
 	background-color: #fff;
 	padding: 0.1em 0.25em;

@@ -90,12 +90,9 @@
 
 				<div class="sidebar-about hidden-md hidden-sm">
 					<h3>About</h3>
-					<p>This tool is based on the popular open-source contract for web designers and developers by <strong>Stuff &amp; Nonsense</strong></p>
-					<ul class="task-list">
-						<li>Originally published: 23/12/2008</li>
-						<li>Revised date: <a href="https://gist.github.com/4031110">15/12/2013</a></li>
-						<li><a href="http://stuffandnonsense.co.uk/projects/contract-killer/" rel="noreferrer">Original post</a></li>
-					</ul>
+					<p>This tool is based on the popular open-source contract for web designers and developers by <a href="http://stuffandnonsense.co.uk/">Stuff &amp; Nonsense</a>. Revised date: <a href="https://gist.github.com/4031110">15/12/2013</a>.</p>
+					<hr>
+					<p>Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> in Bangkok by <a href="http://twitter.com/siamkreative/">SiamKreative</a>.</p>
 				</div>
 			</div>
 		</div>
