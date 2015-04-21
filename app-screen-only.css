@@ -143,6 +143,9 @@
 		padding-top: 0;
 		text-align: center;
 	}
+	.sidebar-description {
+		text-align: center;
+	}
 
 }
 
@@ -159,10 +162,7 @@ body {
 .sidebar-inner {
 	padding: 30px;
 }
-.sidebar-description {
-	display: none;
-}
-.sidebar-intro {
+.sidebar-about {
 	display: none;
 	position: absolute;
 	left: 30px;
@@ -178,9 +178,8 @@ body {
 	background-color: #FFFACD;
 	border-bottom: 2px solid;
 }
-@media(min-height: 1024px) {
-	.sidebar-description,
-	.sidebar-intro {
+@media (min-height: 830px) {
+	.sidebar-about {
 		display: block;
 	}
 }

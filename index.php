@@ -88,7 +88,7 @@
 					<input id="input-html" type="hidden" name="html" value="">
 				</form>
 
-				<div class="sidebar-intro">
+				<div class="sidebar-about hidden-md hidden-sm">
 					<h3>About</h3>
 					<p>This tool is based on the popular open-source contract for web designers and developers by <strong>Stuff &amp; Nonsense</strong></p>
 					<ul class="task-list">
