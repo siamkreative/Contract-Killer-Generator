@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Killer Contract 3 Generator</title>
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,700,300">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/css/bootstrap-datepicker3.min.css">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,700,300">
 	<link rel="stylesheet" type="text/css" href="app-screen-only.css" class="nopdf">
 	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
@@ -84,7 +84,7 @@
 							</div>
 						</div>
 					</div>
-					<button id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
+					<button type="submit" id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
 					<input id="input-html" type="hidden" name="html" value="">
 				</form>
 
