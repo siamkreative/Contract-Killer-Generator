@@ -50,6 +50,7 @@ jQuery(document).ready(function ($) {
 	form.on('change', 'input[name="logo"]', function () {
 		contract.find('.logo').attr('src', event.fpfile.url).removeClass('hide');
 	});
+	$('.btn-fp').attr('tabIndex', '-1');
 
 	/*
 	Geolocation
