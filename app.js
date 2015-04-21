@@ -23,11 +23,15 @@ jQuery(document).ready(function ($) {
 	/*
 	Editing the form
 	 */
-	form.on('keyup change', '.form-control', function (event) {
+	form.on('focus keyup change', '.form-control', function (event) {
 		event.preventDefault();
 		var inputName = $(this).attr('name');
 		var inputVal = $(this).val();
-		contract.find('.' + inputName).addClass('item-editing').text(inputVal);
+		if (inputVal.length) {
+			contract.find('.' + inputName).addClass('item-editing').text(inputVal);
+		} else {
+			contract.find('.' + inputName).addClass('item-editing');
+		}
 	});
 
 	/*
