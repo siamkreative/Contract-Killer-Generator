@@ -6,7 +6,7 @@ This simple tools allow anyone to create a contract based on **[Contract Killer 
 
 ## Demo
 
-The demonstration is not available yet.
+You can try it yourself on [http://labs.siamkreative.com/contract-killer-generator/](http://labs.siamkreative.com/contract-killer-generator/)
 
 ### Technical details
 
