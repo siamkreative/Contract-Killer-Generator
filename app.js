@@ -12,6 +12,9 @@ jQuery(document).ready(function ($) {
 
 		// Insert HTML in hidden input
 		$('#input-html').val(html);
+
+		// Update the UI
+		form.find('[type="submit"]').text('Processing...');
 	});
 
 	/*
@@ -60,7 +63,7 @@ jQuery(document).ready(function ($) {
 		event.preventDefault();
 		$('input[name="court"]').val('Searching location...');
 		$.getJSON('//www.telize.com/geoip', function (geodata) {
-			$('input[name="court"]').val(geodata.city);
+			$('input[name="court"]').val(geodata.city).change();
 		});
 	});
 
