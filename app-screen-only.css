@@ -97,7 +97,7 @@
 	background: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 1200px) {
 	#wrapper {
 		padding-left: 380px;
 	}
@@ -123,6 +123,27 @@
 		position: relative;
 		margin-right: 0;
 	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+	#page-content-wrapper {
+		padding-top: 30px;
+	}
+	#sidebar-wrapper {
+		position: relative;
+		left: 0;
+		width: 100%;
+		height: 289px;
+		margin-left: 0;
+		top: 0;
+	}
+	.sidebar-inner h3 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
 }
 
 /* =============================================================================

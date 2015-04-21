@@ -64,4 +64,11 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
+	var mq = window.matchMedia('(min-width: 768px) and (max-width: 1200px)');
+	if (mq.matches) {
+		$('textarea[name="payment"]').attr('rows', 1);
+	} else {
+		$('textarea[name="payment"]').attr('rows', 2);
+	}
+
 });

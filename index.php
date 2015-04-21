@@ -18,44 +18,50 @@
 				<p class="sidebar-description">Simply fill out the fields below and hit the submit button to save your contract as a PDF.</p>
 				<form id="form-customize" action="inc/create-pdf.php" method="post">
 					<div class="row">
-						<div class="col-lg-8">
+						<div class="col-lg-8 col-md-4 col-sm-4">
 							<div class="form-group">
 								<label class="sr-only">Your (Company) Name</label>
 								<input class="form-control" type="text" name="name" placeholder="Your (Company) Name" required>
 							</div>
 						</div>
-						<div class="col-lg-4">
+						<div class="col-lg-4 hidden-md hidden-sm">
 							<div class="form-group">
 								<!-- https://www.filepicker.com/documentation/file_ingestion/widgets/pick -->
 								<label class="sr-only">Add logo</label>
 								<input type="filepicker" data-fp-button-class="btn btn-default btn-block btn-fp" name="logo" data-fp-button-text="Add Logo" data-fp-extensions=".png,.jpg,.jpeg,.gif">
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Your Address</label>
-						<input class="form-control" type="text" name="address" placeholder="Your Address" required>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Customer Name</label>
-						<input class="form-control" type="text" name="customername" placeholder="Customer Name" required>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Customer Address</label>
-						<input class="form-control" type="text" name="customeraddress" placeholder="Customer Address" required>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Task description</label>
-						<input class="form-control" type="text" name="task" placeholder="Task description" required>
-					</div>
-					<div class="row">
-						<div class="col-lg-6">
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Your Address</label>
+								<input class="form-control" type="text" name="address" placeholder="Your Address" required>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Customer Name</label>
+								<input class="form-control" type="text" name="customername" placeholder="Customer Name" required>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Customer Address</label>
+								<input class="form-control" type="text" name="customeraddress" placeholder="Customer Address" required>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Task description</label>
+								<input class="form-control" type="text" name="task" placeholder="Task description" required>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-4 col-sm-4">
 							<div class="form-group">
 								<label class="sr-only">Total price</label>
 								<input class="form-control" type="text" name="total" placeholder="Total price" required>
 							</div>
 						</div>
-						<div class="col-lg-6">
+						<div class="col-lg-6 col-md-4 col-sm-4">
 							<div class="form-group">
 								<label class="sr-only">Date</label>
 								<div class="input-group date">
@@ -63,15 +69,19 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Payment Schedule</label>
-						<textarea class="form-control" name="payment" placeholder="Payment Schedule" required></textarea>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Courts responsible for this contract</label>
-						<div class="input-group input-group-court">
-							<input class="form-control" type="text" name="court" placeholder="Courts responsible for this contract" required><span class="input-group-addon" title="Locate me" id="locateme"><i class="glyphicon glyphicon-screenshot"></i></span>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Payment Schedule</label>
+								<textarea class="form-control" name="payment" placeholder="Payment Schedule" rows="2" required></textarea>
+							</div>
+						</div>
+						<div class="col-lg-12 col-md-4 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Courts responsible for this contract</label>
+								<div class="input-group input-group-court">
+									<input class="form-control" type="text" name="court" placeholder="Courts responsible for this contract" required><span class="input-group-addon" title="Locate me" id="locateme"><i class="glyphicon glyphicon-screenshot"></i></span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<button id="create-pdf-btn" class="btn btn-primary btn-lg btn-block">Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>
