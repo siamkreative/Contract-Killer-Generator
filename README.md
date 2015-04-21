@@ -1,4 +1,4 @@
-![contract-killer-generator](https://cloud.githubusercontent.com/assets/1778633/7245397/cf5c92e0-e814-11e4-86be-e3e66ab1b650.png)
+![contract-killer-generator](https://cloud.githubusercontent.com/assets/1778633/7248567/f3185d94-e83d-11e4-8707-68ef1f0f46be.png)
 
 # Contract Killer Generator #
 
