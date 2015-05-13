@@ -25,7 +25,7 @@
 			<div class="sidebar-inner">
 				<h3>Generate your own</h3>
 				<p class="sidebar-description">Simply fill out the fields below and hit the submit button to save your contract as a PDF.</p>
-				<form id="form-customize" action="inc/create-pdf.php" method="post">
+				<form id="form-customize" action="inc/create-pdf.php" method="post" data-persist="garlic">
 					<div class="row">
 						<div class="col-lg-8 col-md-4 col-sm-4">
 							<div class="form-group">
@@ -218,6 +218,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/garlic.js/1.2.2/garlic.min.js"></script>
 	<script src="//api.filepicker.io/v1/filepicker.js"></script>
 	<script src="app.js"></script>
 
