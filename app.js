@@ -3,28 +3,33 @@ jQuery(document).ready(function ($) {
 	var form = $('#form-customize'),
 		contract = $('#contract');
 
-	form.on('submit', function () {
+	form.on('submit', function (e) {
+		e.preventDefault();
+
 		// Copy the required stuff (style and encoding)
-		$('.nopdf').siblings().clone().addClass('temporary').prependTo('#contract');
+		$('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
 
 		// Get the outerHTML
 		var html = contract.prop('outerHTML');
 
-		// Insert HTML in hidden input
-		$('#input-html').val(html);
+		/**
+		 * Save to PDF
+		 * https://github.com/MrRio/jsPDF
+		 * http://stackoverflow.com/a/24825130
+		 */
+		var doc = new jsPDF();
+		doc.fromHTML(
+			html,
+			20,
+			20, {
+				'width': 180
+			});
 
-		// Update the UI
-		form.find('[type="submit"]').text('Processing...').prop('disabled', true);
+		// Remove the files we appended earlier on (to restore the screen style)
+		contract.find('.temporary').remove();
 
-		// Remove the files we appended
-		setTimeout(function () {
-			contract.find('.temporary').remove();
-		}, 300);
-
-		// Restore the default state of the submit button
-		setTimeout(function () {
-			form.find('[type="submit"]').html('Save as PDF <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>').prop('disabled', false);
-		}, 3000);
+		// Open PDF in new window
+		doc.output('dataurlnewwindow');
 	});
 
 	/*
