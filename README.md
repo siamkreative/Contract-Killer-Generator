@@ -6,10 +6,10 @@ This simple tools allow anyone to create a contract based on **[Contract Killer 
 
 ## Demo
 
-You can try it yourself on [http://labs.siamkreative.com/contract-killer-generator/](http://labs.siamkreative.com/contract-killer-generator/)
+You can try it yourself on [https://siamkreative-ckg.surge.sh/](https://siamkreative-ckg.surge.sh/)
 
 ### Technical details
 
 - Twitter Bootstrap & jQuery
-- [HTML 2 PDF Rocket](http://www.html2pdfrocket.com/) for HTML to PDF conversion
+- [jsPDF](https://parall.ax/products/jspdf) for HTML to PDF conversion
 - [Telize](http://www.telize.com/) for Geolocation
