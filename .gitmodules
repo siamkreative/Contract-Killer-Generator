@@ -1,3 +1,6 @@
 [submodule "vendor/jsPDF"]
 	path = vendor/jsPDF
 	url = git@github.com:MrRio/jsPDF.git
+[submodule "vendor/Garlic"]
+	path = vendor/Garlic
+	url = https://github.com/guillaumepotier/Garlic.js.git

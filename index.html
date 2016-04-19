@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="iso-8859-1">
     <title>Killer Contract 3 Generator</title>
 
     <!--
@@ -28,52 +28,42 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" class="inc_pdf">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:400,700,300">
-    <link rel="stylesheet" type="text/css" href="app-screen-only.css">
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="css/app-screen-only.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-76556627-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
 </head>
 <body>
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <div class="sidebar-inner">
-                <h3>G&eacute;n&eacute;rez votre propre contrat</h3>
+                <h3>Générez votre propre contrat</h3>
                 <p class="sidebar-description">Il suffit de remplir les champs ci-dessous et cliquez sur le bouton "Enregistrer au format PDF" pour enregistrer votre contrat en tant au format PDF.</p>
                 <form id="form-customize" method="post" data-persist="garlic">
                     <div class="row">
                         <div class="col-lg-8 col-md-4 col-sm-4">
                             <div class="form-group">
-                                <label class="sr-only">Votre nom (de soci&eacute;t&eacute;)</label>
-                                <input class="form-control" type="text" name="name" placeholder="Votre nom (de soci&eacute;t&eacute;)" required>
+                                <label class="sr-only">Votre nom (de société)</label>
+                                <input class="form-control" type="text" name="name" value="davask web limited" placeholder="Votre nom (de société)" required="true" readonly="true">
                             </div>
                         </div>
                         <div class="col-lg-4 hidden-md hidden-sm">
                             <div class="form-group">
                                 <!-- https://www.filepicker.com/documentation/file_ingestion/widgets/pick -->
                                 <label class="sr-only">Ajouter votre logo</label>
-                                <input type="filepicker" data-fp-apikey="AbIR0ecfCQWSKjBIyWN8Uz" data-fp-button-class="btn btn-default btn-block btn-fp" name="logo" data-fp-button-text="+ logo" data-fp-extensions=".png,.jpg,.jpeg,.gif" onchange="jQuery('#logo').attr({'src':event.fpfile.url});">
+                                <input type="filepicker" data-fp-apikey="AbIR0ecfCQWSKjBIyWN8Uz" data-fp-button-class="btn btn-default btn-block btn-fp" name="logo" data-fp-button-text="+ logo" data-fp-extensions=".png,.jpg,.jpeg,.gif" onchange="jQuery('#logo').attr({'src':event.fpfile.url});" readonly="true">
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label class="sr-only">Votre adresse</label>
-                                <input class="form-control" type="text" name="address" placeholder="Votre adresse" required>
+                                <input class="form-control" type="text" name="address" value="Room 747, 7/F, Star House, 3 Salisbury Road, Tsimshatsui, Kowloon, Hong Kong" placeholder="Votre adresse" required="true" readonly="true">
                             </div>
                         </div>
 
                         <div class="col-lg-8 col-md-4 col-sm-4">
                             <div class="form-group">
-                                <label class="sr-only">Nom (de la soci&eacute;t&eacute;) du client</label>
-                                <input class="form-control" type="text" name="customername" placeholder="Nom (de la soci&eacute;t&eacute;) du client" required>
+                                <label class="sr-only">Nom (de la société) du client</label>
+                                <input class="form-control" type="text" name="customername" value="" placeholder="Nom (de la société) du client" required>
                             </div>
                         </div>
                         <div class="col-lg-4 hidden-md hidden-sm">
@@ -86,40 +76,40 @@
                         <div class="col-lg-12 col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label class="sr-only">Adresse du client</label>
-                                <input class="form-control" type="text" name="customeraddress" placeholder="Adresse du client" required>
+                                <input class="form-control" type="text" name="customeraddress" value="" placeholder="Adresse du client" required>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-4">
                             <div class="form-group">
-                                <label class="sr-only">Description de la t&acirc;che</label>
-                                <input class="form-control" type="text" name="task" placeholder="Description de la t&acirc;che" required>
+                                <label class="sr-only">Description de la tâche</label>
+                                <input class="form-control" type="text" name="task" value="" placeholder="Description de la tâche" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label class="sr-only">Prix total</label>
-                                <input class="form-control" type="text" name="total" placeholder="Prix total" required>
+                                <input class="form-control" type="text" name="total" value="" placeholder="Prix total" required>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label class="sr-only">Date</label>
                                 <div class="input-group date">
-                                    <input type="text" name="date" class="form-control" placeholder="Date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    <input type="text" name="date" class="form-control" value="" placeholder="Date ( format JJ/MM/AAAA )"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-4">
                             <div class="form-group">
                                 <label class="sr-only">Calendrier de paiement</label>
-                                <textarea class="form-control" name="payment" placeholder="Calendrier de paiement" rows="2" required></textarea>
+                                <textarea class="form-control" name="payment" placeholder="Calendrier de paiement" required>JJ/MM/AAAA : Montant de la trache 1, [...], JJ/MM/AAAA : Montant de la trache N</textarea>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-4 col-sm-4">
                             <div class="form-group">
-                                <label class="sr-only">Les tribunaux charg&eacute;s de ce contrat</label>
+                                <label class="sr-only">Les tribunaux chargés de ce contrat</label>
                                 <div class="input-group input-group-court">
-                                    <input class="form-control" type="text" name="court" placeholder="Les tribunaux charg&eacute;s de ce contrat" required><span class="input-group-addon" title="Locate me" id="locateme"><i class="glyphicon glyphicon-screenshot"></i></span>
+                                    <input class="form-control" type="text" name="court" value="français" placeholder="Les tribunaux chargés de ce contrat" required><span class="input-group-addon" title="Locate me" id="locateme"><i class="glyphicon glyphicon-screenshot"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -131,14 +121,14 @@
                 <div class="sidebar-about hidden-md hidden-sm">
                     <h3>About</h3>
                     <p>
-                        Cet outil est bas&eacute; sur le contrat populaire open-source pour les concepteurs et les d&eacute;veloppeurs Web par <a href="http://stuffandnonsense.co.uk/">Stuff & Nonsense</a>. Date de r&eacute;vision: <a href="">18/04/2016</a>.
+                        Cet outil est basé sur le contrat populaire open-source pour les concepteurs et les développeurs Web par <a href="http://stuffandnonsense.co.uk/">Stuff & Nonsense</a>. Date de révision: <a href="">18/04/2016</a>.
                     </p>
                     <hr>
                     <p>
-                        Fabriqu&eacute; avec <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Ã  Bangkok par <a href="http://twitter.com/siamkreative/">SiamKreative</a>.
+                        Fabriqué avec <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> à Bangkok par <a href="http://twitter.com/siamkreative/">SiamKreative</a>.
                     </p>
                     <p>
-                        Traduit et mis-&agrave;-jour avec <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en Allemagne par <a href="https://twitter.com/davaskwebltd/">davask web limited</a>.
+                        Traduit et mis-à-jour avec <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> en Allemagne par <a href="https://twitter.com/davaskwebltd/">davask web limited</a>.
                     </p>
                 </div>
             </div>
@@ -148,159 +138,281 @@
                 <div class="container">
 
                     <div id="contract">
-                        <img id="logo" class="logo" src="img/logo_428x120.png" width="300" alt="">
-                        <p>Entre nous <span class="item name">davask web limited</span></p>
-                        <p>et</p>
-                        <!-- https://cdn.filestackcontent.com/cipXdaBTba1b8QVc8vhA -->
-                        <img id="logocustomer" class="logocustomer" src="" width="300" alt="">
-                        <p>vous <span class="item customername">le nom du client</span></p>
+                        <h1>CONTRAT DE PRESTATIONS DE SERVICES</h1>
+                        <div class="between">
+                            <p class="newpage" data-pdf-endpage="2"></p>
+                            <p>
+                                Entre
+                            </p>
+                            <p>
+                                La société <!-- <img id="logo" class="logo" src="img/logo_428x120.png" alt="">  --><span class="item name">davask web limited</span>, numéro d'incorporation 1782706 sous <i>Companies Ordinance</i> à Hong Kong, représentée par <span class="item username">David Asquiedge</span>.
+                            </p>
+                            <p>
+                                Ci-après désignée comme <b>" le prestataire "</b>
+                            </p>
+                            <p>
+                                D'une part
+                            </p>
+                            <p>
+                                et
+                            </p>
+                            <p>
+                                <span class="item clientname">Alexandra Selly</span> agissant pour le compte de la société <!-- <img id="logocustomer" class="logocustomer" src="http://dummyimage.com/428x120/eee/333333.png&text=LOGO" alt=""> --> <span class="item customername">le nom de la société du client</span>
+                            </p>
+                            <p>
+                                Ci-après dénommée <b>" le client "</b>
+                            </p>
+                            <p>
+                                D'autre part
+                            </p>
+                            <p>
+                                Ci-après désignées collectivement les <b>" Parties "</b> et individuellement la <b>" Partie ".</b>
+                            </p>
 
-                        <h2>R&eacute;sum&eacute;:</h2>
-                        <div class="summary">
                             <p>
-                                Nous ferons toujours de notre mieux pour r&eacute;pondre Ã  vos besoins et r&eacute;pondre Ã  vos attentes, mais il est important d'avoir des choses &eacute;crites afin que nous savons tous les deux ce qui est quoi, qui doit faire quoi et quand, et ce qui se passera si quelque chose va mal. Dans ce contrat, vous ne trouverez pas de termes juridiques complexes ou de longs passages de texte illisible. Nous avons pas envie de vous tromper en signant quelque chose que vous pourriez regretter plus tard. Ce que nous ne voulons est ce qui est le mieux pour les deux parties, maintenant et dans l'avenir.
+                                AU PRÉALABLE, IL A ÉTÉ RAPPELÉ CE QUI SUIT :
                             </p>
                             <p>
-                                Donc en bref:
+                                <span class="item name">davask web limited</span> est une société spécialisée dans la conception, la réalisation et la supervision d'applications web au sens large.
                             </p>
                             <p>
-                                Vous (<span class="item customername">nom du client</span>), situ&eacute; Ã  <span class="item customeraddress">l'adresse du client</span> nous embauche (<span class="item name">davask web limited</span>) dont le si&egrave;ge social est situ&eacute; Ã  <span class="item address">Room 747, 7/F, Star House, 3 Salisbury Road, Tsimshatsui, Kowloon, Hong Kong</span> pour <span class="item task">concevoir et d&eacute;velopper un site Web</span> pour le prix total estim&eacute; Ã  <span class="item total">__________</span>, comme indiqu&eacute; dans notre correspondance pr&eacute;c&eacute;dente. Bien sÃ»r, c'est peu plus compliqu&eacute;, mais nous allons arriver Ã  cela.
+                                Le client souhaite faire appel à <span class="item name">davask web limited</span>.
+                            </p>
+                            <p>
+                                Les parties se sont rapprochées afin d'arrêter aux termes du présent contrat (ci-après <b>" Contrat "</b>) les conditions et modalités de leur collaboration.
+                            </p>
+                            <p>
+                                CECI ETANT EXPOSÉ, IL A ÉTÉ CONVENU ET ARRETÉ CE QUI SUIT :
                             </p>
                         </div>
 
+                        <div class="summary">
+                            <h2>ARTICLE 1 : OBJET DU CONTRAT</h2>
+                            <p>
+                                Le présent Contrat a pour objet de définir les modalités de la collaboration entre <span class="item name">davask web limited</span> et le le client, et de définir les conditions dans lesquelles :
+                                <ul>
+                                    <li>
+                                        <span class="item name">davask web limited</span> effectue pour le compte de <span class="item customername">le nom de la société du client</span> les prestations définies à l'Article 2 (ci-après <b>" Prestation "</b>),
+                                    </li>
+                                    <li>
+                                        <span class="item name">davask web limited</span> cède à <span class="item customername">le nom de la société du client</span> l'intégralité des droits de propriété intellectuelle afférents
+                                    </li>
+                                </ul>
+                                aux Prestations, sans exception ni réserve.
+                            </p>
+                        </div>
+
+                        <p class="newpage" data-pdf-endpage="6"></p>
+
+                        <div class="mission">
+                            <h2>ARTICLE 2 : MODALITES DE REALISATION DES PRESTATIONS</h2>
+                            <h3>2.1. Commande des Prestations</h3>
+                            <p>
+                                Le Client passera une commande (ci-après <b>" Commande "</b>) au Prestataire pour la réalisation de la Prestation souhaitée.
+                            </p>
+                                Un accompte (ci-après <b>" Accompte "</b>) aura été au préalable défini entre les parties, lors de la phase d'anaylse du projet.
+                            </p>
+                            <p>
+                                La Commande est réputée acceptée et le contrat est conclu à réception de l'Accompte par le Prestataire.
+                            </p>
+
+<!-- pour <span class="item task">concevoir et développer un site Web</span> pour le prix total estimé à <b class="item total"></b>, comme indiqué dans notre correspondance précédente. Bien sûr, c'est peu plus compliqué, mais nous allons arriver à cela.
+
+
+2.2. Prestations
+Les Prestations faisant l'objet du présent Contrat sont définies dans la Commande sur la base, le cas
+échéant, du devis émis par le Prestataire.
+Le Prestataire doit apporter le plus grand soin ainsi que toutes les diligences à la réalisation des
+Prestations qui lui sont confiées conformément au présent Contrat.
+Il s'engage à mener à bonne fin les Prestations dans le respect des règles de l'art, des dispositions
+légales, réglementaires et contractuelles et s'oblige, pour leur réalisation, à respecter strictement les
+modalités précisées par VISUAL LINK.
+Le Prestataire s'engage à assister à tous les rendez-vous et réunions auxquels VISUAL LINK l'aura
+convié. En cas d'impossibilité, et dans l'objectif de toujours privilégier le bon accomplissement de la
+prestation, le Prestataire devra en informer VISUAL LINK au plus tôt. Si le rendez vous a pour principal
+objet la prestation du Prestataire, ce dernier devra adresser à VISUAL LINK, par tous moyens à sa
+convenance, un compte-rendu de réunion.
+Le Prestataire assume, en ce qui concerne ses Prestations, toutes les obligations techniques,
+juridiques et administratives résultant du contrat, notamment en ce qui concerne les contraintes liées
+aux conditions d'exécution. Il indique avoir pris toutes les précautions et mené toutes les
+investigations utiles pour les apprécier.
+Il est tenu d'une obligation de conseil et d'information envers VISUAL LINK. A ce titre, il doit
+notamment communiquer toutes observations sur tous les documents qui sont portés à sa
+connaissance.
+
+            Le Prestataire agit en tant qu'entrepreneur indépendant et assume de ce fait toutes les charges
+            occasionnées par les Prestations, notamment le recrutement du personnel et versement des salaires
+et des charges y afférentes.
+L'ensemble du personnel du Prestataire affecté à l'exécution de la Commande aura les qualifications,
+les compétences techniques et l'expérience requise pour le travail à réaliser.
+Le Prestataire fournit seul les matériels nécessaires à l'exécution de la Commande.
+2.3. Délai de réalisation des Prestations
+Le Prestataire s'engage à livrer les Prestations commandées par VISUAL LINK dans un délai indiqué
+dans la Commande.
+Le respect du planning établi par les Parties constitue une obligation essentielle du Prestataire qui
+s'engage à respecter les délais correspondant à la réalisation des Prestations.
+Le Prestataire s'engage à avertir immédiatement et par écrit VISUAL LINK de tout événement ou
+circonstance de nature à engendrer un retard dans l'exécution des Prestations.
+Tout retard d'exécution d'une Prestation, imputable au prestataire, entraîne de plein droit
+l'application d'une pénalité égale à 1,5% du prix hors taxes total des Prestations par jour de retard,
+sans préjudice de la faculté de suspendre les paiements et/ou demander réparation de l'intégralité
+du préjudice subi et/ou la résiliation du présent contrat.
+En cas de mise en cause de ce retard, le Prestataire devra prouver et démontrer que ce retard ne lui
+est pas imputable.
+2.4 Modifications
+Les aléas habituels de la Prestation sont à la charge du Prestataire et sont inclus dans le prix
+contractuel.
+Si VISUAL LINK procède, au cours de la réalisation de la Prestation par le Prestataire, à des
+modifications substantielles des éléments fournis dans la Commande, à savoir des modifications qui
+entrainent, pour le Prestataire, un investissement substantiel en temps et/ou en moyens, les Parties
+conviendront ensemble des nouvelles modalités de rémunération du Prestataire.
+2.5 Sélection et Réception
+La réception finale des Prestations est l'acceptation définitive par VISUAL LINK de la Prestation
+remise par le Prestataire après complète réalisation de celle-ci. Elle est constatée par un écrit signé
+et daté par les parties (ci-après <b>" Réception "</b>). Les correspondances mail mentionnant l'acceptation
+définitive sont valables au titre de la réception.
+La Réception s'effectue après que VISUAL LINK a vérifié la conformité de la Prestation avec les
+Eléments. -->
+                        </div>
                         <div class="agree">
                             <h2>Qu'est-ce que les deux parties conviennent de faire?</h2>
                             <p>
-                                * Vous: * Vous avez le pouvoir de conclure ce contrat au nom de vous-m&ecirc;me, votr&eacute; entreprise ou votre organisation. Vous nous donnez tout ce qu'il faut pour terminer le projet et quand et dans le format nous en avons besoin. Vous examinez notre travail, fournir des commentaires et d'approbation en temps opportun aussi. Les d&eacute;lais fonctionnent de deux faÃ§ons, vous aurez donc &eacute;galement &ecirc;tre li&eacute;s pa&eacute; les dates que nous fixons ensemble. Vous acceptez &eacute;galement de respecter le calendrier de paiement pr&eacute;vu Ã  la fin de ce contrat.
+                                * Vous: * Vous avez le pouvoir de conclure ce contrat au nom de vous-même, votré entreprise ou votre organisation. Vous nous donnez tout ce qu'il faut pour terminer le projet et quand et dans le format nous en avons besoin. Vous examinez notre travail, fournir des commentaires et d'approbation en temps opportun aussi. Les délais fonctionnent de deux façons, vous aurez donc également être liés paé les dates que nous fixons ensemble. Vous acceptez également de respecter le calendrier de paiement prévu à la fin de ce contrat.
                             </p>
                             <p>
-                                * Nous: * Nous avons l'exp&eacute;rience et la capacit&eacute; de faire tout ce que nous avons convenu avec vous et nous ferons tout cela d'une maniÃ¨re professionnelle et en temps opportun. Nous nous efforcerons de r&eacute;pondre Ã  chaque &eacute;ch&eacute;ance qui est fix&eacute; et au-dessus de cela, nous allons maintenir la confidentialit&eacute; de tout ce que vous nous donnez.
+                                * Nous: * Nous avons l'expérience et la capacité de faire tout ce que nous avons convenu avec vous et nous ferons tout cela d'une manière professionnelle et en temps opportun. Nous nous efforcerons de répondre à chaque échéance qui est fixé et au-dessus de cela, nous allons maintenir la confidentialité de tout ce que vous nous donnez.
                             </p>
+
                         </div>
 
+                        <p class="newpage" data-pdf-endpage="8"></p>
+
                         <div class="nitty">
-                            <h2>D&eacute;tails du contrat</h2>
+                            <h2>Détails du contrat</h2>
 
                             <h3>Conception</h3>
 
                             <p>
-                                Nous cr&eacute;ons des designs look-and-feel, et des dispositions souples qui s'adaptent aux capacit&eacute;s de nombreux appareils et tailles d'&eacute;cran. Nous cr&eacute;ons des designs it&eacute;rative et utilisons principalement HTML et CSS de sorte que nous ne perdrons pas de temps se moquer jusqu'Ã  chaque modÃ¨le comme un visuel statique. Nous pouvons utiliser des visuels statiques pour indiquer une direction look-and-feel (couleur, texture et de la typographie.) Nous appelons cette atmosphÃ¨re de conception.
+                                Nous créons des designs look-and-feel, et des dispositions souples qui s'adaptent aux capacités de nombreux appareils et tailles d'écran. Nous créons des designs itérative et utilisons principalement HTML et CSS de sorte que nous ne perdrons pas de temps se moquer jusqu'à chaque modèle comme un visuel statique. Nous pouvons utiliser des visuels statiques pour indiquer une direction look-and-feel (couleur, texture et de la typographie.) Nous appelons cette atmosphère de conception.
                             </p>
                             <p>
-                                Vous aurez beaucoup de possibilit&eacute;s d'examiner notre travail et fournir une r&eacute;troaction. Nous allons partager notre Dropbox de travail avec vous et avoir des contacts r&eacute;guliers, &eacute;ventuellement tous les jours. Si, Ã  tout moment, vous n'&ecirc;tes pas heureu&eacute; avec la direction de notre travail prend, vous allez nous payer en entier pour tout ce que nous avons produit jusqu'Ã  ce point et d'annuler ce contrat.
+                                Vous aurez beaucoup de possibilités d'examiner notre travail et fournir une rétroaction. Nous allons partager notre Dropbox de travail avec vous et avoir des contacts réguliers, éventuellement tous les jours. Si, à tout moment, vous n'êtes pas heureué avec la direction de notre travail prend, vous allez nous payer en entier pour tout ce que nous avons produit jusqu'à ce point et d'annuler ce contrat.
                             </p>
 
                             <h3>Le contenu des textes</h3>
 
                             <p>
-                                Nous ne sommes pas responsables de la r&eacute;daction ou la saisie de toute copie de texte. Si vous souhaitez nous &eacute;crire de nouveaux contenus ou texte d'entr&eacute;e pour vous, nous pouvons fournir une estimation distincte pour cela.
+                                Nous ne sommes pas responsables de la rédaction ou la saisie de toute copie de texte. Si vous souhaitez nous écrire de nouveaux contenus ou texte d'entrée pour vous, nous pouvons fournir une estimation distincte pour cela.
                             </p>
 
                             <h3>Photographies</h3>
 
                             <p>
-                                Vous devez fournir des fichiers graphiques dans un format num&eacute;rique vectoriel &eacute;ditable. Vous devez fournir des photographies dans un format num&eacute;rique de haute r&eacute;solution. Si vous choisissez d'acheter photographies, nous pouvons sugg&eacute;rer des bibliothÃ¨ques d'achat d'actions. Si vous souhaitez que nous chercher des photos pour vous, nous pouvons fournir une estimation distincte pour cela.
+                                Vous devez fournir des fichiers graphiques dans un format numérique vectoriel éditable. Vous devez fournir des photographies dans un format numérique de haute résolution. Si vous choisissez d'acheter photographies, nous pouvons suggérer des bibliothèques d'achat d'actions. Si vous souhaitez que nous chercher des photos pour vous, nous pouvons fournir une estimation distincte pour cela.
                             </p>
 
                             <h3>HTML, CSS et JavaScript</h3>
 
                             <p>
-                                Nous livrons pages types Web d&eacute;velopp&eacute;s Ã  partir HTML5 balisage, CSS2.1 + 3 feuilles de style pour le style et JavaScript discret pour la d&eacute;tection de fonctionnalit&eacute;, les poly-remplissages et les comportements.
+                                Nous livrons pages types Web développés à partir HTML5 balisage, CSS2.1 + 3 feuilles de style pour le style et JavaScript discret pour la détection de fonctionnalité, les poly-remplissages et les comportements.
                             </p>
 
                             <h3>test du navigateur</h3>
 
                             <p>
-                                test du navigateur ne signifie plus d'essayer de faire un site Web le m&ecirc;me aspect dan&eacute; les navigateurs de diff&eacute;rentes capacit&eacute;s ou sur des appareils avec diff&eacute;rents &eacute;crans de taille. Cela ne signifie faire en sorte que l'exp&eacute;rience d'une conception d'une personne doit &ecirc;tre adapt&eacute;e au&eacute; capacit&eacute;s d'un navigateur ou d'un dispositif.
+                                test du navigateur ne signifie plus d'essayer de faire un site Web le même aspect dané les navigateurs de différentes capacités ou sur des appareils avec différents écrans de taille. Cela ne signifie faire en sorte que l'expérience d'une conception d'une personne doit être adaptée aué capacités d'un navigateur ou d'un dispositif.
                             </p>
 
                             <h3>test du navigateur de bureau</h3>
 
                             <p>
-                                Nous testons notre travail dans les versions actuelles des grands navigateurs de bureau, y compris celles qui sont faites par Apple (Safari), Google (Chrome), Microsoft (Internet Explorer), Mozilla Firefox et Opera. Nous allons &eacute;galement tester pour assurer Microsoft Internet Explorer 9 pour les utilisateurs Windows obtiennent une r&eacute;ponse appropri&eacute;e, &eacute;ventuellement diff&eacute;rent, l'exp&eacute;rience. Nous allons mettre en Å“uvre une conception de colonne unique pour les anciennes versions d'Internet Explorer et nous ne tester dans d'autres navigateurs plus anciens, sauf indication contraire. Si vous avez besoin d'un design am&eacute;lior&eacute; pour un navigateur plus ancien, nous pouvons fournir une estimation distincte pour cela.
+                                Nous testons notre travail dans les versions actuelles des grands navigateurs de bureau, y compris celles qui sont faites par Apple (Safari), Google (Chrome), Microsoft (Internet Explorer), Mozilla Firefox et Opera. Nous allons également tester pour assurer Microsoft Internet Explorer 9 pour les utilisateurs Windows obtiennent une réponse appropriée, éventuellement différent, l'expérience. Nous allons mettre en oeuvre une conception de colonne unique pour les anciennes versions d'Internet Explorer et nous ne tester dans d'autres navigateurs plus anciens, sauf indication contraire. Si vous avez besoin d'un design amélioré pour un navigateur plus ancien, nous pouvons fournir une estimation distincte pour cela.
                             </p>
 
                             <h3>test du navigateur mobile</h3>
 
                             <p>
-                                Test de dispositifs populaires du petit &eacute;cran est essentiel pour assurer que l'exp&eacute;rience d'une conception d'une personne est adapt&eacute;e aux capacit&eacute;s de l'appareil qu'ils utilisent. Nous testons notre travail en:
+                                Test de dispositifs populaires du petit écran est essentiel pour assurer que l'expérience d'une conception d'une personne est adaptée aux capacités de l'appareil qu'ils utilisent. Nous testons notre travail en:
                             </p>
 
                             <p>
                                 iOS: Safari, Google Chrome Android 4.x: Google Chrome and Firefox
                             </p>
+
                             <p>
                                 Actuellement, nous ne testons pas Blackberry, Opera Mini / Mobile, Windows Phone ou d'autres navigateurs mobiles. Si vous avez besoin de nous pour tester en utilisant ceux-ci, nous pouvons fournir une estimation distincte pour cela.
                             </p>
 
+                        </div>
+                        <p class="newpage" data-pdf-endpage="2"></p>
+                        <div class="nitty">
+
                             <h3>Support technique</h3>
 
                             <p>
-                                Nous ne sommes pas une entreprise de site d'h&eacute;bergement de sorte que nous ne proposons pas de support pour l'h&eacute;bergement web, e-mail ou d'autres services relatifs Ã  l'h&eacute;bergement. Vous pouvez d&eacute;jÃ  avoir un h&eacute;bergement professionnel et vous pourriez m&ecirc;me g&eacute;rer ce&eacute; h&eacute;bergement en interne; si vous le faites, grande. Si vous ne le faites pas, nous pouvons mettre en place un compte pour vous Ã  l'un de nos fournisseurs d'h&eacute;bergement pr&eacute;f&eacute;r&eacute;s. Nous pouvons mettre en place votre site sur un serveur, ainsi que tous les logiciels de statistiques tels que Google Analytics et nous pouvons fournir une estimation distincte pour cela. Ensuite, les mises Ã  jour et la gestion de ce serveur seront Ã  vous.
+                                Nous ne sommes pas une entreprise de site d'hébergement de sorte que nous ne proposons pas de support pour l'hébergement web, e-mail ou d'autres services relatifs à l'hébergement. Vous pouvez déjà avoir un hébergement professionnel et vous pourriez même gérer ceé hébergement en interne; si vous le faites, grande. Si vous ne le faites pas, nous pouvons mettre en place un compte pour vous à l'un de nos fournisseurs d'hébergement préférés. Nous pouvons mettre en place votre site sur un serveur, ainsi que tous les logiciels de statistiques tels que Google Analytics et nous pouvons fournir une estimation distincte pour cela. Ensuite, les mises à jour et la gestion de ce serveur seront à vous.
                             </p>
 
-                            <h3>Modifications et r&eacute;visions</h3>
+                            <h3>Modifications et révisions</h3>
 
                             <p>
-                                Nous savons par exp&eacute;rience que les contrats Ã  prix fixes sont rarement avantageux pour vous, car ils vous limitent souvent Ã  vos premiÃ¨res id&eacute;es. Nous ne voulons pas limiter votre capacit&eacute; Ã  changer d'avis. Le prix au d&eacute;but de ce contrat est bas&eacute; sur la longueur de temps, nous estimons que nous aurons besoin pour accomplir tout ce que vous nous avez dit que vous voulez atteindre, mais nous sommes heureux d'&ecirc;tre flexibl&eacute;. Si vous voulez changer d'avis ou d'ajouter quelque chose de nouveau, qui ne sera pas un problÃ¨me car nous allons fournir une estimation distincte pour cela.
+                                Nous savons par expérience que les contrats à prix fixes sont rarement avantageux pour vous, car ils vous limitent souvent à vos premières idées. Nous ne voulons pas limiter votre capacité à changer d'avis. Le prix au début de ce contrat est basé sur la longueur de temps, nous estimons que nous aurons besoin pour accomplir tout ce que vous nous avez dit que vous voulez atteindre, mais nous sommes heureux d'être flexiblé. Si vous voulez changer d'avis ou d'ajouter quelque chose de nouveau, qui ne sera pas un problème car nous allons fournir une estimation distincte pour cela.
                             </p>
 
-                            <h3>&eacute;l&eacute;ments juridique</h3>
+                            <h3>éléments juridique</h3>
 
                             <p>
-                                Nous ne pouvons pas garantir que notre travail sera sans erreur et nous ne pouvons pas &ecirc;tre tenu responsabl&eacute; envers vous ou un tiers pour les dommages, y compris la perte de profits, perte d'&eacute;conomies ou d'autres dommages accessoires, indirects ou sp&eacute;ciaux, m&ecirc;me si vou&eacute; ' avons-nous conseill&eacute; d'entre eux. Enfin, si une disposition du pr&eacute;sent contrat est ill&eacute;gale, nulle, ou pour toute raison inapplicable, cette disposition sera r&eacute;put&eacute;e divisible de ce contrat et ne doit pas affecter la validit&eacute; et le caractÃ¨re ex&eacute;cutoire des dispositions restantes.
+                                Nous ne pouvons pas garantir que notre travail sera sans erreur et nous ne pouvons pas être tenu responsablé envers vous ou un tiers pour les dommages, y compris la perte de profits, perte d'économies ou d'autres dommages accessoires, indirects ou spéciaux, même si voué ' avons-nous conseillé d'entre eux. Enfin, si une disposition du présent contrat est illégale, nulle, ou pour toute raison inapplicable, cette disposition sera réputée divisible de ce contrat et ne doit pas affecter la validité et le caractère exécutoire des dispositions restantes.
                             </p>
 
                             <h3>Droits d'auteur</h3>
 
                             <p>
-                                Tout d'abord, nous vous garantissons que tous les &eacute;l&eacute;ments de texte, d'images ou d'autres &oelig;uvres d'art que vous fournissez sont soit la propri&eacute;t&eacute; de vos bons eux-m&ecirc;mes, o&eacute; que vous avez la permission de les utiliser.
+                                Tout d'abord, nous vous garantissons que tous les éléments de texte, d'images ou d'autres oeuvres d'art que vous fournissez sont soit la propriété de vos bons eux-mêmes, oé que vous avez la permission de les utiliser.
                             </p>
                             <p>
-                                Puis, lorsque votre paiement final a autoris&eacute;, le droit d'auteur sera automatiquement attribu&eacute; comme suit:
+                                Puis, lorsque votre paiement final a autorisé, le droit d'auteur sera automatiquement attribué comme suit:
                             </p>
                             <p>
-                                Vous poss&eacute;dez les &eacute;l&eacute;ments visuels que nous cr&eacute;ons pour ce projet. Nous allons vous donner les fichiers source et les fichiers finis et vous devriez les garder dans un endroit sÃ»r que nous ne sommes pas tenus de conserver une copie. Vous poss&eacute;dez tous les &eacute;l&eacute;ments du texte, des images et des donn&eacute;es que vous avez fournies, Ã  moins que quelqu'un d'autre les possÃ¨de.
+                                Vous possédez les éléments visuels que nous créons pour ce projet. Nous allons vous donner les fichiers source et les fichiers finis et vous devriez les garder dans un endroit sûr que nous ne sommes pas tenus de conserver une copie. Vous possédez tous les éléments du texte, des images et des données que vous avez fournies, à moins que quelqu'un d'autre les possède.
                             </p>
                             <p>
-                                Nous poss&eacute;dons la combinaison unique de ces &eacute;l&eacute;ments qui constitue une conception complÃ¨te et nous autorisons son utilisation pour vous, exclusivement et Ã  perp&eacute;tuit&eacute; pour ce projet, Ã  moins que nous sommes d'accord autrement.
+                                Nous possédons la combinaison unique de ces éléments qui constitue une conception complète et nous autorisons son utilisation pour vous, exclusivement et à perpétuité pour ce projet, à moins que nous sommes d'accord autrement.
                             </p>
                             <p>
-                                Nous aimons montrer notre travail et partager ce que nous avons appris avec d'autres personnes, de sorte que nous nous r&eacute;servons le droit, avec votre permission, d'afficher et de lien vers votre projet dans le cadre de notre portefeuille et Ã  &eacute;crire Ã  ce sujet sur les sites Web, dans le magazine articles et dans les livres.
+                                Nous aimons montrer notre travail et partager ce que nous avons appris avec d'autres personnes, de sorte que nous nous réservons le droit, avec votre permission, d'afficher et de lien vers votre projet dans le cadre de notre portefeuille et à écrire à ce sujet sur les sites Web, dans le magazine articles et dans les livres.
                             </p>
 
                             <h3>Paiements</h3>
 
                             <p>
-                                Nous sommes sÃ»rs que vous comprenez combien il est important comme une petite entreprise que vous payez les factures que nous vous envoyons rapidement. Comme nous sommes aussi sÃ»rs que vous voulez rester amis, vous vous engagez Ã  tenir serr&eacute; le calendrier de paiement suivant.
+                                Nous sommes sûrs que vous comprenez combien il est important comme une petite entreprise que vous payez les factures que nous vous envoyons rapidement. Comme nous sommes aussi sûrs que vous voulez rester amis, vous vous engagez à tenir serré le calendrier de paiement suivant.
                             </p>
                             <p>
                                 <span class="item payment">Calendrier de paiement</span>
                             </p>
 
-                            <h3>Mais oÃ¹ est tous les petits caractÃ¨res horribles?</h3>
+                        </div>
+                        <p class="newpage" data-pdf-endpage="7"></p>
+                        <div class="nitty">
+
+                            <h3>Mais où est tous les petits caractères horribles?</h3>
 
                             <p>
-                                Tout comme un ticket de parking, vous ne pouvez pas transf&eacute;rer ce contrat Ã  quelqu'un d'autre sans notre permission. Ce contrat reste en place et n'a pas besoin d'&ecirc;tre renouvel&eacute;. Si pour une raison quelconque une partie de ce contrat devient invalide ou inapplicable, les autres parties de celui-ci restent en place.
+                                Tout comme un ticket de parking, vous ne pouvez pas transférer ce contrat à quelqu'un d'autre sans notre permission. Ce contrat reste en place et n'a pas besoin d'être renouvelé. Si pour une raison quelconque une partie de ce contrat devient invalide ou inapplicable, les autres parties de celui-ci restent en place.
                             </p>
                             <p>
-                                Bien que la langue est simple, les intentions sont s&eacute;rieuses et ce contrat est un document juridique relevant de la comp&eacute;tence exclusive des tribunaux <span class="item court">anglais et gallois</span>.
+                                Bien que la langue est simple, les intentions sont sérieuses et ce contrat est un document juridique relevant de la compétence exclusive des tribunaux <span class="item court">anglais et gallois</span>.
                             </p>
 
-                            <h3>La ligne en pointill&eacute;</h3>
-                            <table id="signatures" class="table table-bordered">
-                                <tr>
-                                    <td>&nbsp;</td>
-                                    <td>&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td>Sign&eacute; par et au nom de <span class="item name">nom de l'entreprise</span></td>
-                                    <td>Sign&eacute; par et au nom de <span class="item customername">nom du client</span></td>
-                                </tr>
-                            </table>
+                            <h3>La ligne en pointillé</h3>
                             <p>
                                 Date: <span class="item date">date</span>
                             </p>
+                            <div id="signatures" class="row">
+                                <div class="col-xs-6">Signé par / au nom de <span class="item name">nom de l'entreprise</span></div>
+                                <div class="col-xs-6">Signé par / au nom de <span class="item customername">nom du client</span></div>
+                            </div>
                             <p>
                                 Tout le monde doit signer ci-dessus et garder une copie pour leurs dossiers.
                             </p>
@@ -318,10 +430,21 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.0/js/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/garlic.js/1.2.2/garlic.min.js"></script>
     <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
-    <script type="text/javascript" src="vendor/jspdf.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="vendor/Garlic/dist/garlic.min.js"></script>
+    <script type="text/javascript" src="vendor/jsPDF/dist/jspdf.debug.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-76556627-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 
 </body>
 </html>
