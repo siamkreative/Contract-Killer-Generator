@@ -1,24 +1,26 @@
 body {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 @media (min-width: 992px) {
-	.container {
-		width: 750px;
-	}
+    .container {
+        width: 750px;
+    }
 }
 @media (min-width: 1200px){
-	.container {
-		width: 750px;
-	}
+    .container {
+        width: 750px;
+    }
 }
 #contract {
-	font-size: 16px;
-	line-height: 30px;
+    font-size: 16px;
+    line-height: 30px;
 }
 #contract p {
-	margin: 0 0 18px;
+    margin: 0 0 18px;
 }
-#contract .logo {
-	max-height: 180px;
-	margin-bottom: 30px;
+#contract .logo,
+#contract .logocustomer {
+    max-width: 300px;
+    margin: 0 auto 30px;
+    display: block;
 }

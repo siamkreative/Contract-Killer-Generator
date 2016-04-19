@@ -1,0 +1,3 @@
+[submodule "vendor/jsPDF"]
+	path = vendor/jsPDF
+	url = git@github.com:MrRio/jsPDF.git
