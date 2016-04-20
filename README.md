@@ -1,15 +1,17 @@
 ![contract-killer-generator](https://cloud.githubusercontent.com/assets/1778633/7248567/f3185d94-e83d-11e4-8707-68ef1f0f46be.png)
 
-# Contract Killer Generator #
+# Dwl contract : Generateur de Contrat #
 
-This simple tools allow anyone to create a contract based on **[Contract Killer v3](https://gist.github.com/4031110)** the popular open-source contract for web designers and developers. It offers a sleek user interface to edit the contract terms, and you can also export to PDF.
+Simple outils permettent à quiconque de créer un contrat pour une prestataion d application web de droit francais. Il offre une interface utilisateur élégante pour modifier les termes du contrat, et vous pouvez également exporter au format PDF.
 
 ## Demo
 
-You can try it yourself on [https://siamkreative-ckg.surge.sh/](https://siamkreative-ckg.surge.sh/)
+Vous pouvez essayer par vous-meme [http://contract.davaskweblimited.com/](http://contract.davaskweblimited.com/)
 
-### Technical details
+### Details technique
 
 - Twitter Bootstrap & jQuery
 - [jsPDF](https://parall.ax/products/jspdf) for HTML to PDF conversion
-- [Telize](http://www.telize.com/) for Geolocation
+- [filestack](https://www.filestack.com/) for Cloud File
+- [garlicJs](http://garlicjs.org/) for Automatic form persistance
+

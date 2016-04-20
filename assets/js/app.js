@@ -1,9 +1,27 @@
 jQuery(document).ready(function ($) {
 
-    jQuery('[name="customername"]').val('Weboptimeez');
-    jQuery('[name="customeraddress"]').val('Kirchenstrasse 9, 91054 Erlangen, Allemagne');
-    jQuery('[name="task"]').val('Conception & supervision digitale');
-    jQuery('[name="total"]').val('5000 euros');
+    // jQuery('#form_vendor').hide();
+
+    jQuery('[name="vendor_company').val('davask web limited');
+    // jQuery('[name="vendor_company_logo').val('');
+    jQuery('[name="vendor_company_id_details').val('numéro d\'incorporation 1782706 sous Companies Ordinance a Hong Kong');
+    jQuery('[name="vendor_profile').val('david asquiedge');
+    jQuery('[name="vendor_company_address').val('Room 747, 7/F, Star House, 3 Salisbury Road, Tsimshatsui, Kowloon, Hong Kong');
+    jQuery('[name="vendor_profile_address').val('Kirchenstrasse 9, 91054 Erlangen, Allemagne');
+
+    jQuery('[name="customer_company').val('Weboptimeez');
+    // jQuery('[name="customer_company_logo').val('');
+    jQuery('[name="customer_company_id_details').val('agissant pour le compte de la société');
+    jQuery('[name="customer_profile').val('Weboptimeez');
+    jQuery('[name="customer_address').val('Kirchenstrasse 9, 91054 Erlangen, Allemagne');
+
+    jQuery('[name="contract_date').val('01/05/2016');
+    jQuery('[name="contract_task').val('la conception & supervision digitale d\'une web application');
+    jQuery('[name="contract_total').val('5000 EUR');
+    jQuery('[name="contract_payment_calendar').val("Un deposit de 30% sera effectue afin de declencher le debut du projet. puis  un virement mensuel de 1000 sur 3 mois consecutifs se terminera avec le dernier virement effectue lors de la livraison");
+    jQuery('[name="contract_payment_method').val('carte bancaire ou virement bancaire');
+
+    jQuery('[disabled="true"] .btn').attr({'disabled':'true'});
 
     var today = new Date();
     var dd = today.getDate();
@@ -54,10 +72,6 @@ jQuery(document).ready(function ($) {
     form.on('submit', function (e) {
         e.preventDefault();
 
-        // if (jQuery('#logocustomer').attr('src') == 'http://dummyimage.com/428x120/eee/333333.png&text=LOGO') {
-        //     jQuery('#logocustomer').remove();
-        // }
-
         contract.css(css.print);
         $('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
 
@@ -82,8 +96,8 @@ jQuery(document).ready(function ($) {
             }
             , function(dispose) {
 
-                // pdf.output('dataurlnewwindow');
-                pdf.save('contract.pdf');
+                pdf.output('dataurlnewwindow');
+                // pdf.save('contract.pdf');
 
                 jQuery('table',source).each(function(index, el) {
                     $(this).css({width:margins.width});

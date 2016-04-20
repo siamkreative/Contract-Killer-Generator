@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 992px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 1200px){
+    .container {
+        width: 750px;
+    }
+}
+#contract {
+    font-size: 16px;
+    line-height: 30px;
+    margin:0 auto;
+    background: #ffffff;
+}
+#contract p {
+    margin: 0 0 18px;
+}
+#contract .logo {
+    height: 30px;
+}
+
+#contract h1,
+#contract h2,
+#contract h3,
+#contract h4,
+#contract h5 {
+    // text-align: center;
+    font-weight: normal;
+}
+#contract h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+#contract h2 {
+    font-size: 22px;
+}
+#contract h3 {
+    font-size: 18px;
+}
+// [disabled="true"] .btn {
+//     cursor: not-allowed;
+//     filter: alpha(opacity=65);
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//     opacity: .65;
+//     background-color: #fff;
+//     border-color: #ccc;
+// }

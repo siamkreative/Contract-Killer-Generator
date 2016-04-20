@@ -165,7 +165,7 @@ body {
 }
 .sidebar-about {
 	display: none;
-	position: absolute;
+	// position: absolute;
 	left: 30px;
 	bottom: 30px;
 	right: 30px;
@@ -271,7 +271,7 @@ MENU TOGGLE SWITCHES
 
 /**
 * Style 2
-* 
+*
 * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
 * down to center and transform into an "x".
 */
@@ -329,4 +329,44 @@ MENU TOGGLE SWITCHES
 .cmn-toggle-switch__htx.active span::after {
 	-webkit-transition-delay: 0s, 0.3s;
 	transition-delay: 0s, 0.3s;
+}
+
+/* =============================================================================
+DWL THEME TEMPLATE
+============================================================================= */
+/**
+* Overrides previous css
+*
+*/
+
+table {
+    margin:0 auto;
+}
+table * {
+    background: #ffffff !important;
+}
+
+.form-control {
+    padding: 0 12px;
+    height: 24px;
+}
+
+.btn {
+    padding: 0 12px;
+    line-height: 1.5;
+}
+
+.input-group-addon {
+    padding: 0 12px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#create-pdf-btn-top,
+#create-pdf-btn {
+  padding: 6px 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
