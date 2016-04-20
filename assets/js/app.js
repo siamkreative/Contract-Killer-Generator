@@ -4,14 +4,14 @@ jQuery(document).ready(function ($) {
 
     // jQuery('[name="vendor_company').val('davask web limited');
     // // jQuery('[name="vendor_company_logo').val('');
-    // jQuery('[name="vendor_company_id_details').val('numéro d\'incorporation 1782706 sous Companies Ordinance a Hong Kong');
+    // jQuery('[name="vendor_company_id_details').val('num?o d\'incorporation 1782706 sous Companies Ordinance a Hong Kong');
     // jQuery('[name="vendor_profile').val('david asquiedge');
     // jQuery('[name="vendor_company_address').val('Room 747, 7/F, Star House, 3 Salisbury Road, Tsimshatsui, Kowloon, Hong Kong');
     // jQuery('[name="vendor_profile_address').val('Kirchenstrasse 9, 91054 Erlangen, Allemagne');
 
     // jQuery('[name="customer_company').val('Weboptimeez');
     // // jQuery('[name="customer_company_logo').val('');
-    // jQuery('[name="customer_company_id_details').val('agissant pour le compte de la société');
+    // jQuery('[name="customer_company_id_details').val('agissant pour le compte de la soci??);
     // jQuery('[name="customer_profile').val('Weboptimeez');
     // jQuery('[name="customer_address').val('Kirchenstrasse 9, 91054 Erlangen, Allemagne');
 
@@ -39,6 +39,7 @@ jQuery(document).ready(function ($) {
 
     var form = $('#form-customize')
     , contract = $('#contract')
+    , itemsToHide = $('.hidden-pdf')
     , pdf = new jsPDF('', 'px')
     , source = contract[0]
     , specialElementHandlers = {
@@ -68,10 +69,12 @@ jQuery(document).ready(function ($) {
     }
 
     contract.css(css.screen);
+    itemsToHide.show();
 
     form.on('submit', function (e) {
         e.preventDefault();
 
+        itemsToHide.hide();
         contract.css(css.print);
         $('.inc_pdf').clone().addClass('temporary').prependTo('#contract');
 
@@ -108,6 +111,7 @@ jQuery(document).ready(function ($) {
 
                 contract.find('.temporary').remove();
                 contract.css(css.screen);
+                itemsToHide.show();
 
         });
 

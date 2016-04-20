@@ -11,16 +11,9 @@
     <script type="text/javascript" src="vendor/jsPDF/dist/jspdf.debug.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <?php require('vendor/google/ga.php'); ?>
 
-        ga('create', 'UA-76556627-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+    <img id="beta_icon" class="hidden-pdf" src="assets/icons/beta_teaser.png" alt="beta" style="position: fixed;z-index: 1000;top: 0;left: 0;">
 
 </body>
 </html>

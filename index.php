@@ -1,15 +1,16 @@
 <?php
 error_reporting(-1);
+require('includes/functions.php');
+require('includes/elements.php');
 require('templates/header.php');
-require('templates/elements.php');
 ?>
         <div id="sidebar-wrapper">
             <div class="sidebar-inner">
 
-                <h3>Gérez votre propre contrat</h3>
+                <h3>Gerez votre propre contrat</h3>
 
                 <p class="sidebar-description">
-                    Remplissez les champs ci-dessous et cliquez sur le bouton "Enregistrer au format PDF" pour sauvegarder votre contrat au format PDF (testé uniquement sous chrome).
+                    Remplissez les champs ci-dessous et cliquez sur le bouton "Enregistrer au format PDF" pour sauvegarder votre contrat au format PDF (teste uniquement sous chrome).
                 </p>
 
                 <?php require('templates/form.php'); ?>
@@ -23,6 +24,11 @@ require('templates/elements.php');
                     <p>
                         Cet outil est une amelioration du travail de <a href="http://twitter.com/siamkreative/">SiamKreative</a>.
                     </p>
+                    <h3>Avertissement</h3>
+                    <p>
+                        La publicite n'apparait pas dans le contrat PDF
+                    </p>
+
                 </div>
 
             </div>

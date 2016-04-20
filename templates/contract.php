@@ -3,12 +3,16 @@
 <div class="between">
     <?php require('zones/between.php'); ?>
 </div>
-<p class="newpage" data-pdf-endpage="17"></p>
+<?php pdfPageSeparator(17); ?>
+
 <div class="project">
     <?php require('zones/project.php'); ?>
 </div>
 
 <p class="newpage" data-pdf-endpage="8"></p>
+<div class="hidden-pdf">
+    <?php require('vendor/google/pub_rwd.php'); ?>
+</div>
 
 <div class="authorship">
     <?php require('zones/authorship.php'); ?>
@@ -18,7 +22,7 @@
     <?php require('zones/payment.php'); ?>
 </div>
 
-<p class="newpage" data-pdf-endpage="8"></p>
+<?php pdfPageSeparator(8); ?>
 
 <div class="confidentiality">
     <?php require('zones/confidentiality.php'); ?>
@@ -31,6 +35,9 @@
 </div>
 
 <p class="newpage" data-pdf-endpage="2"></p>
+<div class="hidden-pdf">
+    <?php require('vendor/google/pub_rwd.php'); ?>
+</div>
 
 <div class="signature">
     <p>
