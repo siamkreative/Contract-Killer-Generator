@@ -1,4 +1,4 @@
-![contract-killer-generator](https://cloud.githubusercontent.com/assets/1778633/7248567/f3185d94-e83d-11e4-8707-68ef1f0f46be.png)
+![killer contract 3 generator](https://cloud.githubusercontent.com/assets/482210/14662834/69a69354-06ba-11e6-846a-cfe3bd17a2c1.png)
 
 # Dwl contract : Generateur de Contrat #
 
