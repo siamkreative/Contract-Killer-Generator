@@ -1,6 +1,6 @@
 <h2>ARTICLE 1 : OBJET DU CONTRAT</h2>
 <p>
-    Le présent Contrat a pour objet de définir les modalités de la collaboration entre le Prestataire et le le client, et de définir les conditions dans lesquelles le Prestataire effectue pour le compte du Client les prestations définies a l'Article 2 (ci-apres <b>" Prestation "</b>)
+    Le présent Contrat a pour objet de définir les modalités de la collaboration entre le Prestataire et le client, et de définir les conditions dans lesquelles le Prestataire effectue pour le compte du Client les prestations définies a l'Article 2 (ci-apres <b>" Prestation "</b>).
 </p>
 
 <h2>ARTICLE 2 : MODALITES DE REALISATION DES PRESTATIONS</h2>
@@ -15,27 +15,27 @@
     Le montant total (ci-après <b>" Montant "</b>) de la Prestation est de <?php echo $contract_total; ?> toutes taxes incluses.
 </p>
 <p>
-    le Montant indiqué ne prend pas en compte la majoration du mode de paiement choisi par le Client. Les depenses relatives au moyen de paiement reste a la charge du CLient.
+    Le Montant indiqué ne prend pas en compte la majoration du mode de paiement choisi par le Client. Les dépenses relatives au moyen de paiement restent à la charge du Client.
 </p>
 <p>
-    Un accompte (ci-après <b>" Accompte "</b>) de <?php echo $contract_deposit; ?> a été défini entre les parties.
+    Un acompte (ci-après <b>" Acompte "</b>) de <?php echo $contract_deposit; ?> a été défini entre les parties.
 </p>
 <p>
-    La Commande est réputée acceptée et le contrat est conclu à réception de l'Accompte par le Prestataire sur son compte bancaire ou tout autre porte-monaie electronique (type paypal).
+    La Commande est réputée acceptée et le contrat est conclu à réception de l'Acompte par le Prestataire sur son compte bancaire ou tout autre porte-monnaie électronique (type Paypal).
 </p>
 <p>
-    Le Prestataire aura 72 (soixantes douzes) heures pour effectuer un remboursement en cas de refus du contrat.
+    Le Prestataire aura soixante douze (72) heures pour effectuer un remboursement en cas de refus du contrat.
 </p>
 <p>
-    La prestation ne commencera qu'apres reception constatee de l'Accompte.
+    La prestation ne commencera qu'après réception constatée de l'Acompte.
 </p>
 <p>
-    Dans le cas ou le Contrat prevoit un calendrier de paiement (ci-après <b>" Calendrier "</b>), le Client s'engage a regle chaque echeance comme defini dans le Calendrier.
+    Dans le cas où le Contrat prévoit un calendrier de paiement (ci-après <b>" Calendrier "</b>), le Client s'engage à régler chaque échéance comme défini dans le Calendrier.
 </p>
 
 <h3>2.3 Prestations</h3>
 <p>
-    Les Prestations faisant l'objet du présent Contrat sont définies dans la Commande sur la base, de l'offre (ci-après <b>" Offre "</b>) émise par le Prestataire.
+    Les Prestations faisant l'objet du présent Contrat sont définies dans la Commande sur la base de l'offre (ci-après <b>" Offre "</b>) émise par le Prestataire.
 </p>
 <p>
     Le Prestataire doit apporter le plus grand soin ainsi que toutes les diligences à la réalisation des Prestations qui lui sont confiées conformément au présent Contrat.
@@ -50,14 +50,14 @@
     Le Prestataire agit en tant qu'entrepreneur indépendant et assume de ce fait toutes les charges occasionnées par les Prestations, notamment le recrutement du personnel et versement des salaires et des charges y afférentes.
 </p>
 <p>
-    L'ensemble du personnel du Prestataire affecté à l'exécution de la Commande aura les qualifications, les compétences techniques et l'expérience requise pour le travail à réaliser. Le Prestataire fournit seul les matériels nécessaires à l'exécution de la Commande.
+    L'ensemble du personnel du Prestataire affecté à l'exécution de la Commande aura les qualifications, les compétences techniques et l'expérience requises pour le travail à réaliser. Le Prestataire fournit seul les matériels nécessaires à l'exécution de la Commande.
 </p>
 
 <p class="newpage" data-pdf-endpage="6"></p>
 
 <h3>2.4 Délai de réalisation des Prestations</h3>
 <p>
-    Le Prestataire s'engage à livrer les Prestations commandées par le CLient dans un délai indiqué dans la Commande.
+    Le Prestataire s'engage à livrer les Prestations commandées par le Client dans un délai indiqué dans la Commande.
 </p>
 
 <p>
@@ -65,7 +65,7 @@
 </p>
 
 <p>
-    Le Prestataire s'engage à avertir immédiatement et par écrit le CLient de tout événement ou circonstance de nature à engendrer un retard dans l'exécution des Prestations.
+    Le Prestataire s'engage à avertir immédiatement et par écrit le Client de tout événement ou circonstance de nature à engendrer un retard dans l'exécution des Prestations.
 </p>
 
 <h3>2.5 Modifications</h3>
@@ -73,13 +73,13 @@
     Les aléas habituels de la Prestation sont à la charge du Prestataire et sont inclus dans le prix contractuel.
 </p>
 <p>
-    Si le Client procède, au cours de la réalisation de la Prestation par le Prestataire, à des modifications substantielles des éléments fournis dans la Commande, à savoir des modifications qui entrainent, pour le Prestataire, un investissement substantiel en temps et/ou en moyens (ci-après <b>" Augmentation de la charge de travail"</b>), le Prestataire soumettra un avenant (ci-après <b>"Avenant"</b>) a l'offre initiale definissant les modalités de rémunération de l'Augmentation de la charge de travail du Prestataire ainsi que, le cas echeant, la mise a jour du calendrier de paiement.
+    Si le Client procède, au cours de la réalisation de la Prestation par le Prestataire, à des modifications substantielles des éléments fournis dans la Commande, à savoir des modifications qui entrainent, pour le Prestataire, un investissement substantiel en temps et/ou en moyens (ci-après <b>" Augmentation de la charge de travail"</b>), le Prestataire soumettra un avenant (ci-après <b>"Avenant"</b>) à l'offre initiale définissant les modalités de rémunération de l'Augmentation de la charge de travail du Prestataire ainsi que, le cas échéant, la mise à jour du calendrier de paiement.
 </p>
 <p>
-    Le Client aura 72 (soixante douze) heures pour refuser cette Avenant a reception de l Avenant. Sans refus de la part du Client, il s'engage a regle le montant restant en accord, le cas echeant, avec le nouveau calendrier de paiment.
+    Le Client aura 72 (soixante douze) heures pour refuser cet Avenant à réception de l'Avenant. Sans refus de la part du Client, il s'engage à régler le montant restant en accord, le cas échéant, avec le nouveau calendrier de paiement.
 </p>
 <p>
-    Tout retard dans le reglement du calendrier de paiment de la part du Client offre la faculté au Prestataire de suspendre l'execution des taches et/ou la résiliation du présent contrat.
+    Tout retard dans le règlement du calendrier de paiement de la part du Client offre la faculté au Prestataire de suspendre l'exécution des tâches et/ou de résilier le présent contrat.
 </p>
 
 <h3>2.6 Sélection et Réception</h3>
@@ -87,21 +87,21 @@
     La réception finale des Prestations est l'acceptation définitive par le Client de la Prestation remise par le Prestataire après complète réalisation de celle-ci.
 </p>
 <p>
-    Elle est constatée par un écrit signé et daté par les parties (ci-après <b>" Réception "</b>). Les correspondances mail mentionnant l'acceptation définitive sont valables au titre de la réception.
+    Elle est constatée par un écrit signé et daté par les parties (ci-après <b>" Réception "</b>). Les courriers électroniques (e-mails) mentionnant l'acceptation définitive sont valables au titre de la réception.
 </p>
 
 <h3>2.7 Révisions et support technique</h3>
 <p>
-    Le Client comprend que le Prestataire a été embauché dans le cadre des taches relatives a ce contrat. Les problèmes techniques liés à l'hébergement, les tests de navigateur existant, le matériel, ou des problèmes supplémentaires liés à l'exécution de ce code dans un environnement non conforme a ce Projet ou non approuvé par le Prestataire, ne sont pas la responsabilité du Prestataire.
+    Le Client comprend que le Prestataire a été embauché dans le cadre des tâches relatives à ce contrat. Les problèmes techniques liés à l'hébergement, les tests de navigateur existant, le matériel, ou des problèmes supplémentaires liés à l'exécution de ce code dans un environnement non conforme à ce Projet ou non approuvé par le Prestataire, ne sont pas la responsabilité du Prestataire.
 </p>
 <p>
     Si le Client souhaite embaucher le Prestataire pour un support technique supplémentaire ou de formation suivant ce projet, un nouveau contrat pourra être créé.
 </p>
 <p>
-    Le Client comprend que le Prestataire n'est pas responsable de révisions ou mises à jour de ce projet une fois la livraison effectuee, sauf stipule dans le Contrat. Si le Client souhaite embaucher le Prestataire pour des révisions ou mises-à-jour supplémentaires suivant ce projet, un nouveau contrat pourra être créé.
+    Le Client comprend que le Prestataire n'est pas responsable de révisions ou mises à jour de ce projet une fois la livraison effectuée, sauf stipulé dans le Contrat. Si le Client souhaite embaucher le Prestataire pour des révisions ou mises-à-jour supplémentaires suivant ce projet, un nouveau contrat pourra être créé.
 </p>
 
-<h3>2.8 Les changements de périmètre</h3>
+<h3>2.8 Changements de périmètre</h3>
 <p>
     Si des modifications sont apportées au périmètre de ce projet, ces modifications doivent être approuvées par les deux parties et doivent être faites par écrit. Si des changements importants sont en cours, soit par le Client ou le Prestataire, un nouveau contrat sera émis.
 </p>

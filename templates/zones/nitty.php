@@ -38,7 +38,7 @@
     </p>
 
     <p>
-        Le Prestataire ne pourra en aucun cas être assimilé juridiquement à un salarié du CLient, lequel ne pourra à aucun moment lui donner des consignes. En conséquence, le Prestataire, dans ses rapports avec le CLient, ne saurait en aucun cas relever des dispositions du Code du Travail.
+        Le Prestataire ne pourra en aucun cas être assimilé juridiquement à un salarié du Client, lequel ne pourra à aucun moment lui donner des consignes. En conséquence, le Prestataire, dans ses rapports avec le Client, ne saurait en aucun cas relever des dispositions du Code du Travail.
     </p>
 
     <h3>8.2 Loyauté - Bonne foi</h3>

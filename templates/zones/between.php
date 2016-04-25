@@ -16,15 +16,15 @@
 
 <h2>PREFACE</h2>
 <p>
-    Le but de ce document est de fournir aux deux parties (<?php echo $customer_company; ?> et <?php echo $vendor_company; ?>) impliqué dans <?php echo $contract_task; ?> (ci-après <b>" Projet "</b>), des objectifs et les paramètres. Il sert à renforcer la relation en établissant les attentes pour toutes les parties concernées. En lisant et en signant ce document, les signataires conviennent de se conformer à ces attentes afin de favoriser un environnement d'affaires et de mieux comprendre les objectifs du travail accompli. Ce document est établit pour protéger toutes les parties.
+    Le but de ce document est de fournir aux deux parties (<?php echo $customer_company; ?> et <?php echo $vendor_company; ?>) impliquées dans <?php echo $contract_task; ?> (ci-après <b>" Projet "</b>), des objectifs et les paramètres. Il sert à renforcer la relation en établissant les attentes pour toutes les parties concernées. En lisant et en signant ce document, les signataires conviennent de se conformer à ces attentes afin de favoriser un environnement d'affaires et de mieux comprendre les objectifs du travail accompli. Ce document est établi pour protéger toutes les parties.
 </p>
 
-<h2>INTRO</h2>
+<h2>INTRODUCTION</h2>
 <p>
-    <?php echo $vendor_company; ?> est une société spécialisée dans la conception, la rélisation et la supervision d'applications web.
+    <?php echo $vendor_company; ?> est une société spécialisée dans la conception, la réalisation et la supervision d'applications web.
 </p>
 <p>
-    Ce contrat (ci-après <b>" Contrat "</b>) est conclu aujourd'hui, <?php echo $contract_date; ?>, entre <?php echo $vendor_company; ?>, et son client, <?php echo $customer_company; ?>.
+    Ce contrat (ci-après <b>" Contrat "</b>) est conclu aujourd'hui <?php echo $contract_date; ?> entre <?php echo $vendor_company; ?> et son client, <?php echo $customer_company; ?>.
 </p>
 
 <p>

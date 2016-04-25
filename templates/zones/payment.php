@@ -50,7 +50,7 @@
     </ul>
 </p>
 <p>
-    4.4.2 En cas de rupture anticipée du Contrat pour quelque cause que ce soit, et si les Prestations n'ont pas encore été réceptionnées par le CLient, le Prestataire notifiera au Client la date à laquelle il sera procédé à un constat contradictoire d'état des lieux et d'avancement des Prestations. Un décompte de résiliation sera alors effectué entre les Parties au vu des résultats obtenus par le Prestataire au jour de la rupture. En l'absence d'un représentant du Client à cette date, le constat sera réputé contradictoire.
+    4.4.2 En cas de rupture anticipée du Contrat pour quelque cause que ce soit, et si les Prestations n'ont pas encore été réceptionnées par le Client, le Prestataire notifiera au Client la date à laquelle il sera procédé à un constat contradictoire d'état des lieux et d'avancement des Prestations. Un décompte de résiliation sera alors effectué entre les Parties au vu des résultats obtenus par le Prestataire au jour de la rupture. En l'absence d'un représentant du Client à cette date, le constat sera réputé contradictoire.
 </p>
 <p>
     Il est entendu que, sauf rupture anticipée imputable au Client, le Prestataire s'engage à remettre au Client les travaux dans leur état d'avancement au jour de la rupture. Le Client règlera au prestataire les prestations d'ors et déjà réalisées.
