@@ -1,0 +1,238 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Garlicjs Mocha Tests</title>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36239082-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script type="text/javascript">
+        function jsAppend ( js_file, fn ) {
+          if ( 'string' === typeof js_file ) {
+              js_file = [ js_file ];
+          }
+
+          for ( var i in js_file ) {
+              var js_script = document.createElement( 'script' );
+              js_script.type = "text/javascript";
+              js_script.src = js_file[ i ];
+              document.getElementsByTagName( 'head' )[ 0 ].appendChild( js_script );
+          }
+        }
+    </script>
+</head>
+<body>
+    <div id="info"></div>
+    <div id="mocha"></div>
+
+    <div style="display:none;">
+        <form data-persist="garlic">
+            <input type="text" id="input1" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input2" />
+            <textarea id="textarea1"></textarea>
+            <select id="select1"></select>
+        </form>
+        <div data-persist="garlic" id="div1"></div>
+        <form rel="persist-select">
+            <select id="select2">
+                <option value="option1"></option>
+                <option value="option2"></option>
+            </select>
+        </form>
+
+        <form data-persist="garlic">
+            <input type="checkbox" id="checkbox1" name="checkbox[]" value="checkbox1" />
+            <input type="checkbox" id="checkbox2" name="checkbox[]" value="checkbox2" />
+            <input type="checkbox" id="checkbox3" name="checkbox[]" value="checkbox3" />
+        </form>
+        <form data-persist="garlic">
+            <input type="radio" id="radio1" name="radio" value="radio1" />
+            <input type="radio" id="radio2" name="radio" value="radio2" />
+        </form>
+
+        <form>
+            <input type="text" id="input3" data-persist="garlic" />
+            <input type="text" id="input4" />
+        </form>
+        <form id="form1">
+            <input type="text" id="input5" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input6" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input7" />
+            <textarea id="textarea2"></textarea>
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input8" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input9" />
+            <input type="reset" id="reset1" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input10" />
+            <input type="submit" id="submit1" />
+        </form>
+        <form data-persist="garlic">
+            <input type="text" id="input11" />
+        </form>
+
+        <form data-persist="garlic">
+            <input type="text" id="input12" data-storage="false" />
+            <input type="text" id="input13" />
+        </form>
+
+        <form data-persist="garlic">
+            <input type="number" id="number" />
+        </form>
+        <form data-persist="garlic">
+            <input type="tel" id="tel" />
+        </form>
+        <form data-persist="garlic">
+            <input type="email" id="email" />
+        </form>
+        <form data-persist="garlic">
+            <input type="password" id="password" />
+        </form>
+        <input type="submit" id="submit2" />
+        <select id="select23" data-persist="garlic">
+            <option value="foo">foo</option>
+            <option value="bar">bar</option>
+            <option value="baz">baz</option>
+        </select>
+        <form data-persist="garlic">
+            <input type="text" id="input12" />
+            <select id="select3">
+              <option value="foo">foo</option>
+              <option value="bar">bar</option>
+            </select>
+            <input type="radio" name="radio1" value="foo" />
+            <input type="radio" name="radio1" value="bar" />
+            <ul>
+              <li><input type="radio" name="radio2" value="foo" /></li>
+              <li><input type="radio" name="radio2" value="bar" /></li>
+            </ul>
+            <input type="checkbox" id="checkbox4" name="checkbox2[]" value="foo" />
+            <input type="checkbox" id="checkbox5" name="checkbox2[]" value="bar" />
+            <input type="checkbox" id="checkbox6" name="checkbox2[]" value="baz" />
+            <ul>
+              <li><input type="checkbox" id="checkbox7" name="checkbox3[]" value="bar" /></li>
+              <li><input type="checkbox" id="checkbox8" name="checkbox3[]" value="baz" /></li>
+            </ul>
+            <input type="checkbox" id="checkbox9" name="checkbox9[]" value="foo" />
+        </form>
+        <form data-persist="garlic" data-destroy="false">
+            <textarea id="textarea40"></textarea>
+            <input type="submit" id="submit40" />
+            <input type="reset" id="reset40" />
+        <form data-persist="garlic">
+            <input type="text" id="input13" />
+            <textarea id="textarea13"></textarea>
+            <select id="select13">
+                <option value="foo"></option>
+                <option value="bar"></option>
+            </select>
+            <input type="checkbox" id="checkbox13" value="foo">
+            <input type="radio" id="radio13" value="foo">
+            <input type="submit" id="submit13" />
+            <input type="reset" id="reset13" />
+        </form>
+        <form id="conflictedForm">
+            <input type="text" id="input14" value="default value" />
+            <textarea id="textarea14">default value</textarea>
+            <select id="select14">
+                <option value="first value">first value</option>
+                <option selected value="default value">default value</option>
+                <option value="not default">not default</option>
+            </select>
+        </form>
+        <form id="noGarlicDefault">
+            <input type="text" id="input15" value="default value" />
+        </form>
+        <form id="retrieve-trigger">
+            <input type="text" id="retrieve-input" />
+        </form>
+        <form id="auto-expires-form" data-persist="garlic" data-expires="15">
+            <input type="text" id="auto-expires" />
+            <input type="text" id="auto-expires-2" />
+            <input type="text" id="auto-expires-3" data-expires="25" />
+        </form>
+        <form id="custom-get-path-form" data-persist="garlic">
+            <input type="text" id="custom-get-path-field" />
+        </form>
+        <form id="persist-trigger">
+            <input type="text" id="persist-input" value="bar" />
+        </form>
+        <form id="file-upload">
+            <input type="file" id="file" name="files[]" />
+        </form>
+        <form id="hidden-form">
+            <input type="hidden" id="hidden" />
+        </form>
+    </div>
+
+    <!-- <script type="text/javascript" src="expect.js"></script>
+    <script type="text/javascript" src="mocha.js"></script>
+    <script type="text/javascript" src="tests.js"></script> -->
+    <script type="text/javascript">
+        var jquery = '../resources/jquery-1.8.2.min.js'
+          , zepto = '../resources/zepto-1.0rc1[zepto.event.data].min.js';
+
+        switch ( location.hash ) {
+            case '#zepto':
+                jsAppend( zepto );
+                jsAppend( '../garlic.js' );
+                document.getElementById( 'info' ).innerHTML = 'Garlic test suite for Zepto, unminified version';
+                break;
+            case '#zepto-min':
+                jsAppend( zepto );
+                jsAppend( '../dist/garlic.min.js' );
+                document.getElementById( 'info' ).innerHTML = 'Garlic test suite for Zepto, minified version';
+                break;
+            case '#jquery-min':
+                jsAppend( jquery );
+                jsAppend( '../dist/garlic.min.js' );
+                document.getElementById( 'info' ).innerHTML = 'Garlic test suite for jQuery, minified version';
+                break;
+            case '#standalone':
+                jsAppend( '../dist/garlic-standalone.min.js' );
+                document.getElementById( 'info' ).innerHTML = 'Garlic test suite for Standalone minified version';
+                break;
+            default:
+                jsAppend( jquery );
+                jsAppend( '../garlic.js' );
+                document.getElementById( 'info' ).innerHTML = 'Garlic test suite for jQuery, unminified version';
+                break;
+        }
+
+        jsAppend( [ '../node_modules/mocha/mocha.js', '../node_modules/expect.js/index.js', 'tests.js' ] );
+
+        window.onload = function() {
+
+            mocha.setup('bdd');
+            mocha.reporter('html');
+            testSuite();
+
+            if ( window.mochaPhantomJS ) {
+                mochaPhantomJS.run();
+            } else {
+                mocha.run();
+            }
+        };
+    </script>
+</body>
+</html>

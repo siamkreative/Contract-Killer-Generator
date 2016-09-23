@@ -1,0 +1,372 @@
+/*!
+* Start Bootstrap - Simple Sidebar HTML Template (http://ironsummitmedia.github.io/startbootstrap-simple-sidebar/)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+
+/* Toggle Styles */
+
+#wrapper {
+	padding-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+	padding-left: 380px;
+}
+
+#sidebar-wrapper {
+	z-index: 1000;
+	position: fixed;
+	left: 380px;
+	width: 0;
+	height: 100%;
+	margin-left: -380px;
+	overflow-y: auto;
+	color: #f1f1f1;
+	background: #111;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+	width: 380px;
+}
+
+#page-content-wrapper {
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+	position: absolute;
+	margin-right: -380px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 380px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #999999;
+}
+
+.sidebar-nav li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+	height: 65px;
+	font-size: 18px;
+	line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+	color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+	color: #fff;
+	background: none;
+}
+
+@media (min-width: 1200px) {
+	#wrapper {
+		padding-left: 380px;
+	}
+
+	#wrapper.toggled {
+		padding-left: 0;
+	}
+
+	#sidebar-wrapper {
+		width: 380px;
+	}
+
+	#wrapper.toggled #sidebar-wrapper {
+		width: 0;
+	}
+
+	#page-content-wrapper {
+		padding: 20px;
+		position: relative;
+	}
+
+	#wrapper.toggled #page-content-wrapper {
+		position: relative;
+		margin-right: 0;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 768px) and (max-width: 1200px) {
+
+	#page-content-wrapper {
+		padding-top: 30px;
+	}
+	#sidebar-wrapper {
+		position: relative;
+		left: 0;
+		width: 100%;
+		margin-left: 0;
+		top: 0;
+	}
+	.sidebar-inner h3 {
+		margin-top: 0;
+		padding-top: 0;
+		text-align: center;
+	}
+	.sidebar-description {
+		text-align: center;
+	}
+
+}
+
+/* =============================================================================
+CUSTOMIZE BOOTSTRAP
+============================================================================= */
+body {
+	background-color: #f1f1f1;
+	transition: background-color .25s ease;
+}
+.btn,
+.form-control {
+	border-radius: 0px;
+}
+.sidebar-inner {
+	padding: 30px;
+}
+.sidebar-about {
+	display: none;
+	// position: absolute;
+	left: 30px;
+	bottom: 30px;
+	right: 30px;
+}
+.sidebar-about a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.sidebar-about hr {
+	border-top: 5px solid #444;
+}
+.sidebar-about .glyphicon-heart {
+	color: #c0392b;
+}
+#contract .item {
+	background-color: #fff;
+	padding: 0.1em 0.25em;
+	box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.15);
+}
+#contract .item-editing {
+	background-color: #FFFACD;
+	border-bottom: 2px solid;
+}
+@media (min-height: 830px) {
+	.sidebar-about {
+		display: block;
+	}
+}
+.form-control:focus {
+	background-color: #FFFACD;
+	border-color: #FFFACD;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 250, 205, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(255, 250, 205, .6);
+}
+.input-group-court .input-group-addon {
+	cursor: pointer;
+}
+
+/* =============================================================================
+MENU TOGGLE SWITCHES
+============================================================================= */
+/**
+* Toggle Switch Globals
+*
+* All switches should take on the class `cmn-toggle-switch` as well as their
+* variant that will give them unique properties. This class is an overview
+* class that acts as a reset for all versions of the icon.
+*/
+.cmn-toggle-switch {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 108px;
+	height: 96px;
+	font-size: 0;
+	text-indent: -9999px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	box-shadow: none;
+	border-radius: none;
+	border: none;
+	cursor: pointer;
+	-webkit-transition: background 0.3s;
+	transition: background 0.3s;
+}
+
+.cmn-toggle-switch:focus {
+	outline: none;
+}
+
+.cmn-toggle-switch span {
+	display: block;
+	position: absolute;
+	top: 45px;
+	left: 18px;
+	right: 18px;
+	height: 6px;
+	background: white;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background-color: #fff;
+	content: "";
+}
+
+.cmn-toggle-switch span::before {
+	top: -27px;
+}
+
+.cmn-toggle-switch span::after {
+	bottom: -27px;
+}
+
+/**
+* Style 2
+*
+* Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+* down to center and transform into an "x".
+*/
+.cmn-toggle-switch__htx {
+	background-color: #ff3264;
+}
+
+.cmn-toggle-switch__htx span {
+	-webkit-transition: background 0s 0.3s;
+	transition: background 0s 0.3s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+	-webkit-transition-duration: 0.3s, 0.3s;
+	transition-duration: 0.3s, 0.3s;
+	-webkit-transition-delay: 0.3s, 0s;
+	transition-delay: 0.3s, 0s;
+}
+
+.cmn-toggle-switch__htx span::before {
+	-webkit-transition-property: top, -webkit-transform;
+	transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+	-webkit-transition-property: bottom, -webkit-transform;
+	transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.cmn-toggle-switch__htx.active {
+	background-color: #cb0032;
+}
+
+.cmn-toggle-switch__htx.active span {
+	background: none;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+	bottom: 0;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+	-webkit-transition-delay: 0s, 0.3s;
+	transition-delay: 0s, 0.3s;
+}
+
+/* =============================================================================
+DWL THEME TEMPLATE
+============================================================================= */
+/**
+* Overrides previous css
+*
+*/
+
+table {
+    margin:0 auto;
+}
+table * {
+    background: #ffffff !important;
+}
+
+.form-control {
+    padding: 0 12px;
+    height: 24px;
+}
+
+.btn {
+    padding: 0 12px;
+    line-height: 1.5;
+}
+
+.input-group-addon {
+    padding: 0 12px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#create-pdf-btn-top,
+#create-pdf-btn {
+  padding: 6px 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
