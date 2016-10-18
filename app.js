@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
 	form.on('click', '#locateme', function (event) {
 		event.preventDefault();
 		$('input[name="court"]').val('Searching location...');
-		$.getJSON('//www.telize.com/geoip', function (geodata) {
+		$.getJSON('//geoip.nekudo.com/api', function (geodata) {
 			$('input[name="court"]').val(geodata.city).change();
 		});
 	});
